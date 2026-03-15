@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@example.com" },
-  { icon: MapPin, label: "Location", value: "Available Worldwide" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 000-0000" },
+  { icon: Mail, label: "Email", value: "karlformentera2@gmail.com" },
+  { icon: MapPin, label: "Location", value: "Manila, Philippines" },
+  { icon: Phone, label: "Phone", value: "+63 951 747 5438" },
 ];
 
 export default function ContactSection() {
@@ -89,6 +89,7 @@ export default function ContactSection() {
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
                 className="bg-slate-900/50 border-slate-800 text-white placeholder:text-slate-600 h-12 rounded-xl focus:border-blue-500/50 focus:ring-blue-500/20"
+                type={undefined}
               />
             </div>
             <div>
@@ -114,6 +115,7 @@ export default function ContactSection() {
             <Button
               type="submit"
               disabled={sending}
+              onClick={handleSubmit}
               className="w-full h-12 bg-blue-500 hover:bg-blue-400 text-white font-medium rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
             >
               {sending ? (

@@ -4,10 +4,11 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Wildlife Explorer",
     description:
-      "Full-stack online store with real-time inventory, payment integration, and admin dashboard.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      "Full-stack online platform for exploring and learning about wildlife.",
+    tags: ["React", "Node.js", "MongoDB"],
+    githubrepository: "https://github.com/mrdoom208/Wildlife-Explorer",
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     gradient: "from-blue-600/20 to-indigo-600/20",
@@ -82,9 +83,14 @@ export default function ProjectsSection() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-4 right-4 z-20 flex gap-2">
-                  <button className="p-2.5 rounded-xl bg-slate-950/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white transition-colors">
+                  <a
+                    href={project.githubrepository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl bg-slate-950/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white transition-colors"
+                  >
                     <Github size={16} />
-                  </button>
+                  </a>
                   <button className="p-2.5 rounded-xl bg-slate-950/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white transition-colors">
                     <ExternalLink size={16} />
                   </button>

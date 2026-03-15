@@ -89,16 +89,31 @@ export default function HeroSection() {
           className="flex items-center justify-center gap-6"
         >
           {[
-            { icon: Github, label: "GitHub" },
-            { icon: Linkedin, label: "LinkedIn" },
-            { icon: Mail, label: "Email" },
-          ].map(({ icon: Icon, label }) => (
-            <button
+            {
+              icon: Github,
+              label: "GitHub",
+              link: "https://github.com/mrdoom208",
+            },
+            {
+              icon: Linkedin,
+              label: "LinkedIn",
+              link: "https://linkedin.com/in/karlformentera",
+            },
+            {
+              icon: Mail,
+              label: "Email",
+              link: "mailto:karlformentera2@gmail.com",
+            },
+          ].map(({ icon: Icon, label, link }) => (
+            <a
               key={label}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-xl border border-slate-800 bg-slate-900/50 text-slate-400 hover:text-white hover:border-slate-600 transition-all duration-300"
             >
               <Icon size={20} />
-            </button>
+            </a>
           ))}
         </motion.div>
       </div>

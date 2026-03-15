@@ -36,9 +36,9 @@ export default function Navbar() {
           onClick={() => scrollTo("#hero")}
           className="text-xl font-bold tracking-tight"
         >
-          <span className="text-white">dev</span>
+          <span className="text-white">My</span>
           <span className="text-blue-400">.</span>
-          <span className="text-blue-400">portfolio</span>
+          <span className="text-blue-400">Portfolio</span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
