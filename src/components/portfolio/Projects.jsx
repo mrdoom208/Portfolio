@@ -7,17 +7,19 @@ const projects = [
     title: "Wildlife Explorer",
     description:
       "Full-stack online platform for exploring and learning about wildlife.",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Node.js", "MongoDB", "REST API"],
     githubrepository: "https://github.com/mrdoom208/Wildlife-Explorer",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
-    gradient: "from-blue-600/20 to-indigo-600/20",
+      "https://res.cloudinary.com/dfjm0xwup/image/upload/v1773587106/wildlife_bben7k.png",
+    link: "https://mrdoom208wildlifeexplorer.vercel.app/",
+    gradient: "from-green-600/30 to-blue-600/30",
   },
   {
-    title: "Task Management App",
+    title: "RiseCare Kiosk GUI (Capstone Project)",
     description:
-      "Collaborative project management tool with real-time updates, drag-and-drop, and analytics.",
-    tags: ["React", "Java", "Spring Boot", "PostgreSQL"],
+      "Intuitive touchscreen interface for RiseCare Kiosk, enabling seamless user interactions and efficient healthcare service access.",
+    tags: ["React", "Node.js", "PostgreSQL", "REST API"],
+    githubrepository: "https://github.com/mrdoom208/RISECARE-KIOSK-GUI",
     image:
       "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&q=80",
     gradient: "from-emerald-600/20 to-teal-600/20",
@@ -91,7 +93,11 @@ export default function ProjectsSection() {
                   >
                     <Github size={16} />
                   </a>
-                  <button className="p-2.5 rounded-xl bg-slate-950/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white transition-colors">
+                  <button
+                    title="go to"
+                    onClick={() => window.open(project.link, "_blank")}
+                    className="cursor-pointer p-2.5 rounded-xl bg-slate-950/60 backdrop-blur-sm border border-slate-700/50 text-slate-300 hover:text-white transition-colors"
+                  >
                     <ExternalLink size={16} />
                   </button>
                 </div>

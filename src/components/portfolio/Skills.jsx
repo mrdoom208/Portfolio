@@ -16,6 +16,7 @@ const tools = [
   "REST APIs",
   "MongoDB",
   "PostgreSQL",
+  "MySQL",
   "TypeScript",
   "Tailwind CSS",
   "Spring Boot",
